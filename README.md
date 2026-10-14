@@ -203,7 +203,3 @@ El servidor usa `werkzeug.security`, que genera hashes con **sal** (un valor ale
 - **Portabilidad:** el proyecto se puede copiar y ejecutar en cualquier equipo sin configuración adicional, y las pruebas pueden usar bases temporales.
 
 Es una opción adecuada para una aplicación pequeña como esta práctica. Para un sistema con muchas escrituras concurrentes convendría un motor cliente-servidor como PostgreSQL o MySQL.
-
-## Publicación en GitHub Pages
-
-GitHub Pages publica esta documentación como sitio estático. Como Pages solo sirve contenido estático, no puede ejecutar la API Flask: para probarla es necesario ejecutar `servidor.py` localmente como se indica arriba, o desplegarla en un servicio que ejecute Python. En un despliegue público la API debe servirse detrás de HTTPS, ya que HTTP Basic no cifra las credenciales por sí solo.
